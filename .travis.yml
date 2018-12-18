@@ -63,7 +63,8 @@ install:
   #- nvm install $NODE_VERSION;
   - echo "$TRAVIS_NODE_VERSION"
   - echo "$TRAVIS_OS_NAME"
-  - nvm -v
+  - npm -v
+  - node -v
   #- nvm on  
   - ./ci/install.sh
 

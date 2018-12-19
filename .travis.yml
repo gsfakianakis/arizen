@@ -14,7 +14,7 @@ branches:
     - master
 language: node_js
 node_js:
-  - "node"    
+  - "6"    
 env:
   global:
     # TODO Update this to match the name of your project.
@@ -63,8 +63,8 @@ install:
   #- nvm install $NODE_VERSION;
   - echo "$TRAVIS_NODE_VERSION"
   - echo "$TRAVIS_OS_NAME"
-  - npm -v
-  - node -v
+  #- npm -v
+  #- node -v
   #- nvm on  
   - ./ci/install.sh
 

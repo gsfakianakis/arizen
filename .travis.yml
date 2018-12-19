@@ -14,7 +14,7 @@ branches:
     - master
 language: node_js
 node_js:
-  - "6"    
+  - '6'   
 env:
   global:
     # TODO Update this to match the name of your project.
@@ -24,20 +24,20 @@ env:
 matrix:
   include:
   - os: osx
-    env: TARGET_ARCH=x64
-    osx_image: xcode9.2
-    sudo: required
-    language: c
+    # env: TARGET_ARCH=x64
+    # osx_image: xcode9.2
+    # sudo: required
+    # language: c
   - os: windows
-    sudo: required
-    env: TARGET_ARCH=x64
-    language: c
+    # sudo: required
+    # env: TARGET_ARCH=x64
+    # language: c
   - os: linux
-    env: CC=clang CXX=clang++ npm_config_clang=1 TARGET_ARCH=x64
-    compiler: clang
-    sudo: required
-    dist: trusty
-    language: c
+    # env: CC=clang CXX=clang++ npm_config_clang=1 TARGET_ARCH=x64
+    # compiler: clang
+    # sudo: required
+    # dist: trusty
+    # language: c
 
 cache:
   directories:
